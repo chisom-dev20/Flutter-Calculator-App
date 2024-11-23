@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class CalculatorButton extends StatelessWidget {
   
-  CalculatorButton({
+  const CalculatorButton({
     super.key,
     required this.text,
     required this.color,
@@ -12,10 +12,10 @@ class CalculatorButton extends StatelessWidget {
     required this.onTap,
   });
 
-  String text;
-  Color color;
-  Color textColor;
-  VoidCallback onTap;
+ final String text;
+ final Color color;
+ final Color textColor;
+ final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
